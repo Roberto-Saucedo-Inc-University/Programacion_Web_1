@@ -1,0 +1,108 @@
+<html>
+<head>
+    <style>
+        body {background-image: url('Imagenes/Paleontologo.jpg');}
+        h1 {font-size: 200%;;}
+        p {margin: 10px;}
+        a:link {
+      color: green;
+      background-color: transparent;
+      text-decoration: none;
+    }
+</style>
+</head>
+<title>Bienvenido</title>
+<body>
+<BR>
+<CENTER><h1>BIENVENIDO</h1>
+  <h2>Dinosaurio Favorito</h2>
+  <form>
+    <input type="radio" id="html" name="Dino" value="T-Rex">
+    <label for="html">T-Rex</label><br>
+    <input type="radio" id="css" name="Dino" value="Tricepratos">
+    <label for="css">Tricepratos</label><br>
+    <input type="radio" id="javascript" name="Dino" value="Spinosaurio">
+    <label for="javascript">Spinosaurio</label><br>
+    <input type="radio" id="javascript" name="Dino" value="Terodactilo">
+    <label for="javascript">Terodactilo</label><br>
+    <input type="radio" id="javascript" name="Dino" value="Velociraptor">
+    <label for="javascript">Velociraptor</label><br>
+    <br>
+  </form>
+  <h2>Que es?</h2>
+  <br>
+  <form>
+    <input type="checkbox">omnívoro<br>
+    <input type="checkbox">Carnivoro<br>
+    <input type="checkbox">Herbivoro<br>
+  </form>
+   <br>
+   <h2 for="cars">Donde lo conocio?:</h2>
+  <select id="cars" name="cars">
+  <option value="volvo">Peliculas</option>
+  <option value="saab">Animacion</option>
+  <option value="fiat">Series</option>
+  <option value="audi">Libros</option>
+  </select>
+  <br>
+  <form>
+    <input list="browsers">
+    <datalist id="browsers">
+      <option value="1 Estrella">
+      <option value="2 Estrella">
+      <option value="3 Estrella">
+      <option value="4 Estrella">
+      <option value="5 Estrella">
+    </datalist>
+  </form>
+  <br>
+  <h2>Hace cuantos milloes de años vivio?</h2>
+  <form action="/action_page.php"
+  oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+  0
+  <input type="range"  id="a" name="a" value="50">
+  100 +
+  <input type="number" id="b" name="b" value="1">
+  =
+  <output name="x" for="a b"></output>
+  <br><br>
+</form>
+  <textarea name="message" style="width:300px; height:200px;">
+    Comentarios
+  </textarea>
+  <br>
+  <form>
+    <label for="myfile">Seleccione imagen:</label>
+    <input type="file" id="myfile" name="myfile">
+  </form>
+  <br>
+  <label for="country_code">Codigo:</label>
+  <input type="text" id="country_code" name="country_code"
+  pattern="[A-Za-z]{3}" title="Three letter country code">
+  <br>
+  <canvas id="myCanvas" width="200" height="100" style="border:1px solid #d3d3d3;">
+    No hay soporte para java.</canvas>
+    
+    <script>
+    var c = document.getElementById("myCanvas");
+    var ctx = c.getContext("2d");
+    ctx.moveTo(0,0);
+    ctx.lineTo(200,100);
+    ctx.stroke();
+    </script>
+  <form>
+    <svg width="100" height="100">
+      <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
+    </svg>
+    
+    <br>
+    <label for="gsearch">Ayuda:</label>
+    <input type="search" id="gsearch" name="gsearch">
+  </form>
+  <button type="button" onclick="alert('Terminado')">Listo</button>
+</CENTER>
+
+
+
+</body>
+</html>
