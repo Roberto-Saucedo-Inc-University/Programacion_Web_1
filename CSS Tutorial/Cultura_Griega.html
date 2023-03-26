@@ -9,18 +9,36 @@
 h1 {
   color: white;
   text-align: center;
+  height: 500px;
+  width: 100px;
+  height: 100px;
+  padding: 5px;
+  border: 1px solid blue;  
+  background-color: yellow;
 }
 h2{
     color: rgb(53, 56, 227);
     text-align: center;
+    overflow: scroll;
+    text-align: center;
+  border: 3px solid green;
 }
 h3,ol{
     color: rgb(116, 104, 104);
     text-align: center;
+    float: left;
+  width: 33.33%; /* three boxes (use 25% for four, and 50% for two, etc) */
+  padding: 50px; 
 }
 p.center {
   text-align: center;
   color: red;
+  overflow: auto;
+  margin: auto;
+  width: 50%;
+  border: 3px solid green;
+  padding: 10px;
+
 }
 p.large {
   font-size: 300%;
@@ -33,14 +51,61 @@ p.large {
   text-align: center;
   color: blue; /* MY text IS  red */
 }
-p {
+p [target="_blank"]{
   font-family: verdana;
   font-size: 20px;
+  background-color: #f1f1f1;
+  width: 50%;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+  display: none;
+  background-color: yellow;
+  padding: 20px;
 }
 /*THIS IS A REFERENCES*/
 #para1 {
   text-align: center;
   color: red;
+  clear: left;
+}
+p::first-line {
+  color: #ff0000;
+  font-variant: small-caps;
+}
+img{
+  float: right;
+  content: "";
+  clear: both;
+  display: table;
+  opacity: 0.5;
+}
+div > p {
+  background-color: yellow;
+}
+a:active {
+  color: #0000FF;
+}
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
 }
 </style>
 <title>Cultura Griega</title>
@@ -70,7 +135,12 @@ p {
 <p title="Las termopilas"> 
 
 </p>
-
+<div class="gallery">
+  <a target="_blank" href="img_lights.jpg">
+    <img src="img_lights.jpg" alt="Northern Lights" width="600" height="400">
+  </a>
+  <div class="desc">Add a description of the image here</div>
+</div>
 <h2 style="color:blue;text-align:center;" ><a href="#C3">Dinosaurios mas Populares</a></h2>
 
     <table>

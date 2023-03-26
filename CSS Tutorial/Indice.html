@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="gn">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    
+    body {background-image: url('Imagenes/Extincion.jpg');}
+    h1 {font-size: 200%; color: aliceblue;
+        position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  padding: 5px;
+  background-color: #cae8ca;
+  border: 2px solid #4CAF50;}
+    h3 { color: aliceblue;position: relative;
+  left: 30px;
+  border: 3px solid #73AD21;}
+    li { color: aliceblue;}
+    p {margin: 10px;
+        position: static;
+  border: 3px solid #73AD21;
+  width: 200px;
+  height: 65px;
+  background-color: coral;
+  overflow: visible;}
+    a:link {
+  color: green;
+  background-color: transparent;
+  text-decoration: none;
+  }
+  li{
+    display: inline;
+    display: block;
+    width: 500px;
+  margin: auto;
+  border: 3px solid #73AD21;
+  }
+  image{
+    position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: -1;
+  position: relative;
+  z-index: 1;
+  border: 2px solid black;
+  height: 100px;
+  margin: 30px;
+  }
+  #marco{
+    width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  }
+  input[type=text]{
+    background-color: white;
+  background-image: url('searchicon.png');
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  padding-left: 40px;
+  }
+  input[type=button], input[type=submit], input[type=reset] {
+  background-color: #04AA6D;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+  
+</style>
+<title>Indice</title>
+</head>
+<body style="text-align:center">
+  <h1>Indice General</h1>
+  <h3><a href="">Principal Dinosaurios</a></h3>
+  <ol style="list-style-type:none;"></ol>>
+    <li><a href="Herbivoros.html">Herbivoros</a></li>
+    <li><a href="Carnivoros.html">Carnivoros</a></li>
+    <li><a href="Marinos.html">Marinos</a></li>
+    <li><a href="Voladores.html">Voladores</a></li>
+    <li><a href="Index.html"><---Volver</a></li>
+  </ol>
+  <div class="marco">
+    <h2>Sus datos Basicos Por favor</h2>
+    <p>Se necesita sus datos para darle la bienvenida</p>
+    <div class="dentro">
+      <ol >
+        <ul style="list-style-type:none;">
+         <form action="Bienvenida.html" autocomplete="on">
+        <span style="color:blue;font-weight:bold;"><label for="fname">Nombres:</label>
+       <br>
+       <input type="text" id="fname" name="fname" value="" required><br><br>       
+      </ul>
+        <ul>
+          <span style="color:blue;font-weight:bold;"><label for="lname">Apellidos:</label><br>
+          <br>  
+          <input type="text" id="lname" name="lname" value="" required><br><br>
+        </ul>
+        <ul>
+          <span style="color:blue;font-weight:bold;"><label for="birthday">Cumpleaños:</label><br>
+          <br>  
+          <input type="date" id="birthday" name="birthday" required><br><br>
+        </ul>
+        <ul>
+          <span style="color:blue;font-weight:bold;"><label for="phone">Su numero de telefono:</label><br>
+          <br>  
+          <input type="tel" id="phone" name="phone" pattern="[09]{2}-[0-9]{2}-[0-9]{3}-[0-9]{3}" required><br><br>
+        </ul>
+        <ul>
+          <span style="color:blue;font-weight:bold;"><label for="lname">Carrera:</label><br>
+          <br>  
+          <input type="text" id="lname" name="cname" value="" required><br><br>
+        </ul>
+        <ul>
+          <span style="color:blue;font-weight:bold;"><label for="lname">Año:</label><br>
+          <br>  
+          <input type="text" id="lname" name="aname" value="" required><br><br>
+        </ul>
+        <ul>
+          <span style="color:blue;font-weight:bold;"><label for="lname">Cuenta Bancaria</label><br>
+          <br>  
+          <input type="text" id="lname" name="cbname" value="" required><br><br>
+        </ul>
+        <ul>
+          <span style="color:blue;font-weight:bold;"><label for="clname">Clave:</label><br>
+          <br>  
+          <input type="password" id="clname" name="clname" required><br><br>
+        </ul>
+        <ul>
+          <span style="color:blue;font-weight:bold;"><label for="favcolor">Su color favor:</label><br>
+          <br>  
+          <input type="color" id="favcolor" name="favcolor" required>
+        </ul>
+           <Br>
+        <ul><input type="image" src="Imagenes/boton.jpg" alt="Submit" width="70" height="30"><input type="submit" formaction="Bienvenida.html" value="Submit as Admin"> <input type="reset"> </ul>
+      </ol>
+    </form> 
+    </div><br>
+  
+  </div>
+</body>
+</html>

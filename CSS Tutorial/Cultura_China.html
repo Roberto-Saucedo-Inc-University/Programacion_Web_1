@@ -5,7 +5,7 @@
    body {
     background-color: hsl(0, 100%, 90%); /* same as #ffcc99 */;
   background-image: url("Imagenes/china.jpg");
-  
+  counter-reset: section;
 
 }
 
@@ -20,10 +20,16 @@ h1 {
 h2{
     color: rgb(53, 56, 227);
     text-align: center;
+    counter-increment: section;
+  content: "Section " counter(section) ": ";
 }
 h3,ol{
     color: rgb(116, 104, 104);
 
+}
+ol{
+  counter-reset: section;
+  list-style-type: none;
 }
 p.center {
   text-align: center;
@@ -43,6 +49,9 @@ p.large {
 p {
   font-family: verdana;
   font-size: 20px;
+  content: "";
+  display: table;
+  clear: both;
 
 }
 /*THIS IS A REFERENCES*/
